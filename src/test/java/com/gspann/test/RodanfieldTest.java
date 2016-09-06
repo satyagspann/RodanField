@@ -40,6 +40,7 @@ public class RodanfieldTest {
 		driver.findElement(By.xpath("//a[contains(text(),'All Products')]")).click();
 		
 		//Verify page
+
 		 String URL = driver.getCurrentUrl();
 	     System.out.println(URL);
 	     Assert.assertTrue(URL.contains("/quickShop"),"Mismatch");
