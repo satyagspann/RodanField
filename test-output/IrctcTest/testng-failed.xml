@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [IrctcTest]" parallel="none">
+  <parameter name="browser" value="Firefox"/>
+  <test name="RodanField Test">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="com.gspann.test.RoadFieldTest"/>
+    </classes>
+  </test> <!-- RodanField Test -->
+  <test name="RodanField Test(failed)" parallel="none">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="com.gspann.test.RoadFieldTest">
+        <methods>
+          <include name="InitializeDriver"/>
+          <include name="test"/>
+        </methods>
+      </class> <!-- com.gspann.test.RoadFieldTest -->
+    </classes>
+  </test> <!-- RodanField Test(failed) -->
+</suite> <!-- Failed suite [IrctcTest] -->

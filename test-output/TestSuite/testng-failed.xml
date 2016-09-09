@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [TestSuite]" parallel="tests">
+  <parameter name="browser" value="Firefox"/>
+  <test name="FirefoxTest1">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="com.gspann.test.RoadFieldTest"/>
+    </classes>
+  </test> <!-- FirefoxTest1 -->
+  <test name="FirefoxTest">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="com.gspann.test.RoadFieldTest"/>
+    </classes>
+  </test> <!-- FirefoxTest -->
+  <test name="FirefoxTest1(failed)" parallel="tests">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="com.gspann.test.RoadFieldTest">
+        <methods>
+          <include name="InitializeDriver"/>
+          <include name="InitializeDriver"/>
+          <include name="test"/>
+        </methods>
+      </class> <!-- com.gspann.test.RoadFieldTest -->
+    </classes>
+  </test> <!-- FirefoxTest1(failed) -->
+  <test name="FirefoxTest(failed)" parallel="tests">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="com.gspann.test.RoadFieldTest">
+        <methods>
+          <include name="InitializeDriver"/>
+          <include name="InitializeDriver"/>
+          <include name="test"/>
+        </methods>
+      </class> <!-- com.gspann.test.RoadFieldTest -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->

@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="RodanfieldTest" parallel = "tests" threadcount = "2">
-  <test name="Firefox Test">
-  <parameter name="browser" value="Firefox"/>
-    <classes>
-      <class name="com.gspann.test.RodanfieldTest"/>
-    </classes>
-  </test>
-  <test name="Chrome Test">
-  <parameter name="browser" value="chrome"/>
-    <classes>
-      <class name="com.gspann.test.RodanfieldTest"/>
-    </classes>
-  </test>
-    </suite>
+<suite name="RoadFieldTest" thread-count="2" parallel="classes">
+<tests>
+<test name="RoadFieldTest">
+<classes>
+<class name="com.gspann.test.RoadFieldTest"/>
+<class name="com.gspann.test.RodanFieldConsultantTest"/>
+</classes>
+</test>
+</tests>
+</suite>
+
